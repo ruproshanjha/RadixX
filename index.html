@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadixX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">RadixX</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://github.com/ruproshanjha" target="_blank">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="converter-container">
+            <label for="from-system">Select Number System:</label>
+            <select id="from-system">
+                <option value="binary">Binary</option>
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                <option value="octal">Octal</option>
+            </select>
+
+            <label for="input-number">Enter Number:</label>
+            <input type="text" id="input-number" placeholder="Enter number">
+
+            <label for="to-system">Convert To:</label>
+            <select id="to-system">
+                <option value="binary">Binary</option>
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                <option value="octal">Octal</option>
+            </select>
+
+            <label for="result-number">Converted Number:</label>
+            <input type="text" id="result-number" readonly placeholder="Converted number will appear here">
+
+            <button onclick="convert()">Convert</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with 🖤 by Roshu...</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
